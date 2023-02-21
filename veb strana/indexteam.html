@@ -30,6 +30,10 @@
         color: white;
 
     }
+    ll{
+        font-size: 500px;
+    }
+    
     
 </style>
 <body>
@@ -86,5 +90,20 @@
     </ol>
 </div>
 </div>
+<p id="ll"></p>
+<script>
+    var ime="Lionel ";
+    var prezime="Messi";
+    document.getElementById("ll").innerHTML=ime+prezime;
+
+    
+</script>
+<button type="button" onclick="changeStyle()">Player of the Squad</button>
+    <script>
+    function changeStyle(){
+        var element = document.getElementById("ll");
+        element.style.fontSize = "80px";
+    }
+    </script>
 </body>
 </html>

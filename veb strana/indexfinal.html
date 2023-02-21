@@ -12,19 +12,22 @@
         background-image: url('black.png');
   background-size: cover;
     }
-    .pp{
-        font-size: 40px;
-        color: wheat;
-    }
-    .vid{
-        width: 1000px;
-        height: 600px;
-    }
+    
+    
 
 </style>
 <body>
-    <p class="pp">World Cup 2022 final: Relive Argentina's remarkable win over France - Highlights:</p>
-    <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe class="vid" src="https://www.youtube.com/embed/LzK-96iDpXI?rel=0" ></iframe></div> 
+    <p class="dd">Watch the final here:</p>
+
+    <p id="demo1">finale</p>
+    
+    <script>
+    let tekst = "France vs Argentina Final (Full Match)";
+    let rezultat = tekst.link("https://youtu.be/zhEWqfP6V_w");
+    document.getElementById("demo1").innerHTML = rezultat;
+    </script>
+
+
     
 </body>
 </html>

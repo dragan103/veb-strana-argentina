@@ -19,7 +19,31 @@
     <a href="https://wingsnations.com/products/argentina"><img class="2k" src="kit4.png" width="500px" height="500px" alt=""></a>
     <a href="https://theworldjerseys.com/products/argentina-home-jersey-2020-2021-mens"><img class="2k" src="kit5.png" width="500px" height="500px" alt=""></a>
     <a href="https://www.gojersey.cc/productdetail/Argentina-Pre-Match-Training-Jersey-2020-Blue/105370"><img class="2k" src="kit6.png" width="500px" height="550px" alt=""></a>
+    <p id="ss"></p>
 
+
+    <script>
+    
+    var countDownDate = new Date("Feb 29, 2023 12:22:25").getTime();
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+    
+      var rastojanie = countDownDate - now;
+      var dena = Math.floor(rastojanie / (1000 * 60 * 60 * 24));
+      var sati = Math.floor((rastojanie % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minuti = Math.floor((rastojanie % (1000 * 60 * 60)) / (1000 * 60));
+      var sekundi = Math.floor((rastojanie % (1000 * 60)) / 1000);
+      document.getElementById("ss").innerHTML = dena + "d " + sati + "h "
+      + minuti + "m " + sekundi + "s ";
+    
+      if (rastojanie < 0) {
+        clearInterval(x);
+        document.getElementById("ss").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
     
 </body>
 </html>
